@@ -1,0 +1,42 @@
+package _interface
+
+import (
+	"context"
+
+	"git.huoys.com/middle-end/kratos/pkg/conf/paladin"
+	isvc "{{.ModPrefix}}{{.Name}}/interface/service"
+	pb "{{.ModPrefix}}{{.Name}}/api"
+	// icfg "{{.ModPrefix}}{{.Name}}/interface/config"
+	"git.huoys.com/middle-end/kratos/pkg/log"
+)
+
+// todo 导出插件
+var (
+	Configs = map[string]paladin.Setter{}
+
+	SayHello ISayHello
+)
+
+// 初始化为默认接口
+func init() {
+	SayHello = &SayHelloDefault{}
+}
+
+// 加载业务配置
+func LoadConfig() {
+
+    //默认配置加载
+    //Configs["application.txt"] = icfg.Config
+
+	for fileName, data := range Configs {
+		if err := paladin.Watch(fileName, data); err != nil {
+			panic(err)
+		}
+		log.Info("配置文件:%s,加载成功.", fileName)
+	}
+}
+
+// 导出的插件函数 接口定义
+type ISayHello interface {
+	Say(ctx context.Context, svc *isvc.Service, req *pb.HelloReq) string
+}

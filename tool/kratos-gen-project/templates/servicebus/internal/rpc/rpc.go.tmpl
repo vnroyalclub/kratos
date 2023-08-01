@@ -1,0 +1,44 @@
+package rpc
+
+import (
+	"git.huoys.com/middle-end/kratos/pkg/net/rpc/warden"
+	xtime "git.huoys.com/middle-end/kratos/pkg/time"
+	"github.com/google/wire"
+	"google.golang.org/grpc"
+	"time"
+)
+
+var Provider = wire.NewSet(
+	InitConf,
+	InitOpts,
+	InitClient,
+)
+
+//自定义的客户端放在这里，推荐使用默认客户端 api/client.go
+type Client struct {
+
+}
+
+func InitConf() *warden.ClientConfig {
+	return &warden.ClientConfig{
+		Timeout: xtime.Duration(time.Millisecond * 4000),
+	}
+}
+
+func InitOpts() []grpc.DialOption {
+	return nil
+}
+
+//把需要调用的RPC client作为参数输入到这里
+func InitClient(/* type rpc.Client */) (c *Client, err error) {
+    //eg 初始化默认客户端
+    // demoCli git.huoys.com/middle-business/demo/api
+    // demoCli.DefaultClient()
+
+    //eg 初始化自定义客户端
+	c = &Client{
+
+	}
+
+	return
+}

@@ -1,0 +1,18 @@
+package _interface
+
+import (
+	"context"
+	"fmt"
+
+	isvc "{{.ModPrefix}}{{.Name}}/interface/service"
+	pb "{{.ModPrefix}}{{.Name}}/api"
+)
+
+// todo 默认插件的实现, 业务逻辑都在在这里处理
+
+type SayHelloDefault struct {}
+
+func (d *SayHelloDefault) Say(ctx context.Context, svc *isvc.Service, req *pb.HelloReq) string {
+
+	return fmt.Sprintf("hello %s", req.Name)
+}

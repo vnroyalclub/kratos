@@ -1,0 +1,77 @@
+package api
+import (
+	"context"
+	"fmt"
+	"sync"
+	"time"
+	"git.huoys.com/middle-end/kratos/pkg/net/rpc/warden"
+    "git.huoys.com/middle-end/kratos/pkg/log"
+	"google.golang.org/grpc"
+	xtime "git.huoys.com/middle-end/kratos/pkg/time"
+)
+
+
+// AppID .
+const AppID = "{{.Name}}"
+
+var (
+    _cli DemoClient
+    _once sync.Once
+)
+
+// NewClient new grpc client
+func NewClient(cfg *warden.ClientConfig, opts ...grpc.DialOption) (DemoClient, error) {
+	client := warden.NewClient(cfg, opts...)
+    //cc, err := client.Dial(context.Background(), fmt.Sprintf("discovery://default/%s", AppID))
+    cc, err := client.Dial(context.Background(), "direct://default/127.0.0.1:9000")
+	//cc, err := client.Dial(context.Background(), "kubernetes://{namespace}/{servicename}:{portname}")
+	if err != nil {
+        fmt.Printf("ERROR!: %s init faild",AppID)
+		return nil, err
+	}
+	return NewDemoClient(cc), nil
+}
+
+// 生成 gRPC 代码
+//go:generate kratos tool protoc --grpc --gin api.proto
+
+
+// 默认客户端，调用者可以手动初始化，也可以在调用接口时初始化
+func DefaultClient() DemoClient {
+	_once.Do(func() {
+		cfg := &warden.ClientConfig{
+			Timeout: xtime.Duration(time.Millisecond * 4000),
+		}
+
+		var err error
+		_cli, err = NewClient(cfg)
+		if err != nil {
+			log.Error("client Dial error: %s", err)
+			return
+		}
+
+		log.Info("init %s client ok .", AppID)
+	})
+
+	return _cli
+}
+
+//推荐方式： 1 参数检查  2 组装参数  3 提炼正确返回值
+//最好使用单一返回值，便于代码调用。 报错时输出日志。
+func SayHello(name string) string {
+	if name == "" {
+		log.Error("参数错误 name为空")
+		return ""
+	}
+
+	out, err := DefaultClient().SayHello(context.Background(), &HelloReq{
+		Name: name,
+	})
+
+	if err != nil || out == nil{
+		log.Error("请求失败. err:%v", err)
+		return ""
+	}
+
+    return out.Content
+}

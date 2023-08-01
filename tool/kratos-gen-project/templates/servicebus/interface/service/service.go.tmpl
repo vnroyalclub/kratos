@@ -1,0 +1,15 @@
+package service
+
+import (
+	"{{.ModPrefix}}{{.Name}}/internal/dao"
+	"{{.ModPrefix}}{{.Name}}/internal/rpc"
+	"git.huoys.com/middle-end/kratos/pkg/conf/paladin"
+
+)
+
+//业务逻辑层在这里处理
+type Service struct {
+	Ac  *paladin.Map
+	Dao dao.Dao
+	Rpc *rpc.Client
+}

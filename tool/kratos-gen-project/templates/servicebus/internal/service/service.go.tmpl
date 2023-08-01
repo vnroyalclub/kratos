@@ -1,0 +1,68 @@
+package service
+
+import (
+	"context"
+	"fmt"
+
+	pb "{{.ModPrefix}}{{.Name}}/api"
+	"{{.ModPrefix}}{{.Name}}/internal/dao"
+	"{{.ModPrefix}}{{.Name}}/internal/rpc"
+	"git.huoys.com/middle-end/kratos/pkg/conf/paladin"
+
+	isvc "{{.ModPrefix}}{{.Name}}/interface/service"
+    hook "{{.ModPrefix}}{{.Name}}/interface"
+
+	types "github.com/gogo/protobuf/types"
+	"github.com/google/wire"
+)
+
+var Provider = wire.NewSet(New, wire.Bind(new(pb.DemoServer), new(*Service)))
+
+// Service service.
+type Service struct {
+    isvc.Service
+}
+
+// New new a service and return.
+func New(d dao.Dao, r *rpc.Client) (s *Service, cf func(), err error) {
+	s = &Service{
+		isvc.Service{
+            Ac:  &paladin.TOML{},
+            Dao: d,
+            Rpc: r,
+		},
+	}
+	cf = s.Close
+	err = paladin.Watch("application.txt", s.Service.Ac)
+	hook.LoadConfig()
+	return
+}
+
+// SayHello grpc demo func.
+func (s *Service) SayHello(ctx context.Context, req *pb.HelloReq) (reply *pb.HelloResp, err error) {
+    // todo 流程控制
+
+    // 参数校验
+
+	return &pb.HelloResp{
+        Content: hook.SayHello.Say(ctx, &s.Service, req),
+	}, nil
+}
+
+// SayHelloURL bm demo func.
+func (s *Service) SayHelloURL(ctx context.Context, req *pb.HelloReq) (reply *pb.HelloResp, err error) {
+	reply = &pb.HelloResp{
+		Content: "hello " + req.Name,
+	}
+	fmt.Printf("hello url %s", req.Name)
+	return
+}
+
+// Ping ping the resource.
+func (s *Service) Ping(ctx context.Context, e *types.Empty) (*types.Empty, error) {
+	return &types.Empty{}, s.Service.Dao.Ping(ctx)
+}
+
+// Close close the resource.
+func (s *Service) Close() {
+}

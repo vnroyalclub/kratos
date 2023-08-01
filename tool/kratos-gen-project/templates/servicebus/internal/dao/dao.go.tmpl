@@ -1,0 +1,45 @@
+package dao
+
+import (
+	"context"
+
+	"git.huoys.com/middle-end/kratos/pkg/cache/redis"
+	"github.com/google/wire"
+)
+
+var Provider = wire.NewSet(New, NewRedis)
+
+// //go:generate kratos tool genbts
+// Dao dao interface
+type Dao interface {
+	Close()
+	Ping(ctx context.Context) (err error)
+}
+
+// dao dao.
+type dao struct {
+	redis       *redis.Redis
+}
+
+// New new a dao and return.
+func New(r *redis.Redis) (d Dao, cf func(), err error) {
+	return newDao(r)
+}
+
+func newDao(r *redis.Redis) (d *dao, cf func(), err error) {
+	d = &dao{
+		redis: r,
+	}
+	cf = d.Close
+	return
+}
+
+// Close close the resource.
+func (d *dao) Close() {
+	d.redis.Close()
+}
+
+// Ping ping the resource.
+func (d *dao) Ping(ctx context.Context) (err error) {
+	return nil
+}
