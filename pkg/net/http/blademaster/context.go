@@ -9,11 +9,11 @@ import (
 	"sync"
 	"text/template"
 
-	"git.huoys.com/middle-end/kratos/pkg/net/metadata"
+	"github.com/vnroyalclub/kratos/pkg/net/metadata"
 
-	"git.huoys.com/middle-end/kratos/pkg/ecode"
-	"git.huoys.com/middle-end/kratos/pkg/net/http/blademaster/binding"
-	"git.huoys.com/middle-end/kratos/pkg/net/http/blademaster/render"
+	"github.com/vnroyalclub/kratos/pkg/ecode"
+	"github.com/vnroyalclub/kratos/pkg/net/http/blademaster/binding"
+	"github.com/vnroyalclub/kratos/pkg/net/http/blademaster/render"
 
 	"github.com/gogo/protobuf/proto"
 	"github.com/gogo/protobuf/types"

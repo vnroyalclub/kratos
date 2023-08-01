@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"os"
 
-	"git.huoys.com/middle-end/kratos/tool/protobuf/pkg/gen"
-	"git.huoys.com/middle-end/kratos/tool/protobuf/pkg/generator"
-	cometgen "git.huoys.com/middle-end/kratos/tool/protobuf/protoc-gen-tcp-loop/generator"
+	"github.com/vnroyalclub/kratos/tool/protobuf/pkg/gen"
+	"github.com/vnroyalclub/kratos/tool/protobuf/pkg/generator"
+	cometgen "github.com/vnroyalclub/kratos/tool/protobuf/protoc-gen-tcp-loop/generator"
 )
 
 func main() {

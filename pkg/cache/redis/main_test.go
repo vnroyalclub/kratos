@@ -6,9 +6,9 @@ import (
 	"testing"
 	"time"
 
-	"git.huoys.com/middle-end/kratos/pkg/container/pool"
-	"git.huoys.com/middle-end/kratos/pkg/testing/lich"
-	xtime "git.huoys.com/middle-end/kratos/pkg/time"
+	"github.com/vnroyalclub/kratos/pkg/container/pool"
+	"github.com/vnroyalclub/kratos/pkg/testing/lich"
+	xtime "github.com/vnroyalclub/kratos/pkg/time"
 )
 
 var (

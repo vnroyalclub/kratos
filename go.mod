@@ -1,4 +1,4 @@
-module git.huoys.com/middle-end/kratos
+module github.com/vnroyalclub/kratos
 
 go 1.13
 

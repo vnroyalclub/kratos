@@ -9,11 +9,11 @@ import (
 	"syscall"
 	"time"
 
-	"git.huoys.com/middle-end/kratos/pkg/ecode"
-	"git.huoys.com/middle-end/kratos/pkg/log"
-	"git.huoys.com/middle-end/kratos/pkg/net/rpc/warden"
-	pb "git.huoys.com/middle-end/kratos/pkg/net/rpc/warden/internal/proto/testproto"
-	xtime "git.huoys.com/middle-end/kratos/pkg/time"
+	"github.com/vnroyalclub/kratos/pkg/ecode"
+	"github.com/vnroyalclub/kratos/pkg/log"
+	"github.com/vnroyalclub/kratos/pkg/net/rpc/warden"
+	pb "github.com/vnroyalclub/kratos/pkg/net/rpc/warden/internal/proto/testproto"
+	xtime "github.com/vnroyalclub/kratos/pkg/time"
 
 	"google.golang.org/grpc"
 )

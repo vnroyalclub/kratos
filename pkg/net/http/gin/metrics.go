@@ -3,8 +3,8 @@ package gin
 import (
 	"bytes"
 	"encoding/json"
-	"git.huoys.com/middle-end/kratos/pkg/net/metadata"
-	"git.huoys.com/middle-end/kratos/pkg/stat/metric"
+	"github.com/vnroyalclub/kratos/pkg/net/metadata"
+	"github.com/vnroyalclub/kratos/pkg/stat/metric"
 	"github.com/gin-gonic/gin"
 	"strconv"
 	"time"

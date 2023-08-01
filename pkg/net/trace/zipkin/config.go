@@ -3,9 +3,9 @@ package zipkin
 import (
 	"time"
 
-	"git.huoys.com/middle-end/kratos/pkg/conf/env"
-	"git.huoys.com/middle-end/kratos/pkg/net/trace"
-	xtime "git.huoys.com/middle-end/kratos/pkg/time"
+	"github.com/vnroyalclub/kratos/pkg/conf/env"
+	"github.com/vnroyalclub/kratos/pkg/net/trace"
+	xtime "github.com/vnroyalclub/kratos/pkg/time"
 )
 
 // Config config.

@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
-	"git.huoys.com/middle-end/kratos/pkg/container/pool"
-	xtime "git.huoys.com/middle-end/kratos/pkg/time"
+	"github.com/vnroyalclub/kratos/pkg/container/pool"
+	xtime "github.com/vnroyalclub/kratos/pkg/time"
 )
 
 var testConnASCII Conn

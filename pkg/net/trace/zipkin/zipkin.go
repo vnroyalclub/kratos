@@ -2,10 +2,10 @@ package zipkin
 
 import (
 	"fmt"
-	protogen "git.huoys.com/middle-end/kratos/pkg/net/trace/proto"
+	protogen "github.com/vnroyalclub/kratos/pkg/net/trace/proto"
 	"time"
 
-	"git.huoys.com/middle-end/kratos/pkg/net/trace"
+	"github.com/vnroyalclub/kratos/pkg/net/trace"
 	"github.com/openzipkin/zipkin-go/model"
 	"github.com/openzipkin/zipkin-go/reporter"
 	"github.com/openzipkin/zipkin-go/reporter/http"

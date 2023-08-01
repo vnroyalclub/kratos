@@ -10,16 +10,16 @@ import (
 	"sync"
 	"time"
 
-	"git.huoys.com/middle-end/kratos/pkg/conf/dsn"
-	"git.huoys.com/middle-end/kratos/pkg/log"
-	nmd "git.huoys.com/middle-end/kratos/pkg/net/metadata"
-	"git.huoys.com/middle-end/kratos/pkg/net/rpc/warden/ratelimiter"
-	"git.huoys.com/middle-end/kratos/pkg/net/trace"
-	xtime "git.huoys.com/middle-end/kratos/pkg/time"
+	"github.com/vnroyalclub/kratos/pkg/conf/dsn"
+	"github.com/vnroyalclub/kratos/pkg/log"
+	nmd "github.com/vnroyalclub/kratos/pkg/net/metadata"
+	"github.com/vnroyalclub/kratos/pkg/net/rpc/warden/ratelimiter"
+	"github.com/vnroyalclub/kratos/pkg/net/trace"
+	xtime "github.com/vnroyalclub/kratos/pkg/time"
 
 	//this package is for json format response
-	_ "git.huoys.com/middle-end/kratos/pkg/net/rpc/warden/internal/encoding/json"
-	"git.huoys.com/middle-end/kratos/pkg/net/rpc/warden/internal/status"
+	_ "github.com/vnroyalclub/kratos/pkg/net/rpc/warden/internal/encoding/json"
+	"github.com/vnroyalclub/kratos/pkg/net/rpc/warden/internal/status"
 
 	"github.com/pkg/errors"
 	"google.golang.org/grpc"

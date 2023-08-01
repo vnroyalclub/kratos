@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	pb "git.huoys.com/middle-end/kratos/pkg/cache/memcache/test"
+	pb "github.com/vnroyalclub/kratos/pkg/cache/memcache/test"
 
 	"github.com/stretchr/testify/assert"
 )

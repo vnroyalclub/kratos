@@ -1,7 +1,7 @@
 package tag
 
 import (
-	"git.huoys.com/middle-end/kratos/tool/protobuf/pkg/extensions/gogoproto"
+	"github.com/vnroyalclub/kratos/tool/protobuf/pkg/extensions/gogoproto"
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/protoc-gen-go/descriptor"
 )

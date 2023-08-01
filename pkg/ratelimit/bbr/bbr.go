@@ -6,13 +6,13 @@ import (
 	"sync/atomic"
 	"time"
 
-	"git.huoys.com/middle-end/kratos/pkg/container/group"
-	"git.huoys.com/middle-end/kratos/pkg/ecode"
-	"git.huoys.com/middle-end/kratos/pkg/log"
-	limit "git.huoys.com/middle-end/kratos/pkg/ratelimit"
-	"git.huoys.com/middle-end/kratos/pkg/stat/metric"
+	"github.com/vnroyalclub/kratos/pkg/container/group"
+	"github.com/vnroyalclub/kratos/pkg/ecode"
+	"github.com/vnroyalclub/kratos/pkg/log"
+	limit "github.com/vnroyalclub/kratos/pkg/ratelimit"
+	"github.com/vnroyalclub/kratos/pkg/stat/metric"
 
-	cpustat "git.huoys.com/middle-end/kratos/pkg/stat/sys/cpu"
+	cpustat "github.com/vnroyalclub/kratos/pkg/stat/sys/cpu"
 )
 
 var (

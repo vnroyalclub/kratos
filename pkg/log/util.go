@@ -7,10 +7,10 @@ import (
 	"strconv"
 	"time"
 
-	"git.huoys.com/middle-end/kratos/pkg/conf/env"
-	"git.huoys.com/middle-end/kratos/pkg/log/internal/core"
-	"git.huoys.com/middle-end/kratos/pkg/net/metadata"
-	"git.huoys.com/middle-end/kratos/pkg/net/trace"
+	"github.com/vnroyalclub/kratos/pkg/conf/env"
+	"github.com/vnroyalclub/kratos/pkg/log/internal/core"
+	"github.com/vnroyalclub/kratos/pkg/net/metadata"
+	"github.com/vnroyalclub/kratos/pkg/net/trace"
 )
 
 func addExtraField(ctx context.Context, fields map[string]interface{}) {

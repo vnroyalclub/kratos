@@ -8,10 +8,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"git.huoys.com/middle-end/kratos/pkg/net/netutil/breaker"
-	"git.huoys.com/middle-end/kratos/pkg/net/rpc/warden"
-	"git.huoys.com/middle-end/kratos/pkg/net/rpc/warden/internal/benchmark/bench/proto"
-	xtime "git.huoys.com/middle-end/kratos/pkg/time"
+	"github.com/vnroyalclub/kratos/pkg/net/netutil/breaker"
+	"github.com/vnroyalclub/kratos/pkg/net/rpc/warden"
+	"github.com/vnroyalclub/kratos/pkg/net/rpc/warden/internal/benchmark/bench/proto"
+	xtime "github.com/vnroyalclub/kratos/pkg/time"
 
 	goproto "github.com/gogo/protobuf/proto"
 	"github.com/montanaflynn/stats"

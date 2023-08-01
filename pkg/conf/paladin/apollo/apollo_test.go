@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"git.huoys.com/middle-end/kratos/pkg/conf/paladin/apollo/internal/mockserver"
+	"github.com/vnroyalclub/kratos/pkg/conf/paladin/apollo/internal/mockserver"
 )
 
 func TestMain(m *testing.M) {

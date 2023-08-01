@@ -23,8 +23,8 @@ import (
 	"context"
 	"sync"
 
-	"git.huoys.com/middle-end/kratos/pkg/cache"
-	"git.huoys.com/middle-end/kratos/pkg/sync/errgroup"
+	"github.com/vnroyalclub/kratos/pkg/cache"
+	"github.com/vnroyalclub/kratos/pkg/sync/errgroup"
 )
 
 var _ _bts

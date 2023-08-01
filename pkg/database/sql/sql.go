@@ -7,10 +7,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"git.huoys.com/middle-end/kratos/pkg/ecode"
-	"git.huoys.com/middle-end/kratos/pkg/log"
-	"git.huoys.com/middle-end/kratos/pkg/net/netutil/breaker"
-	"git.huoys.com/middle-end/kratos/pkg/net/trace"
+	"github.com/vnroyalclub/kratos/pkg/ecode"
+	"github.com/vnroyalclub/kratos/pkg/log"
+	"github.com/vnroyalclub/kratos/pkg/net/netutil/breaker"
+	"github.com/vnroyalclub/kratos/pkg/net/trace"
 
 	"github.com/go-sql-driver/mysql"
 	"github.com/pkg/errors"

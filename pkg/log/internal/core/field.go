@@ -5,7 +5,7 @@ import (
 	"math"
 	"time"
 
-	xtime "git.huoys.com/middle-end/kratos/pkg/time"
+	xtime "github.com/vnroyalclub/kratos/pkg/time"
 )
 
 // FieldType represent D value type

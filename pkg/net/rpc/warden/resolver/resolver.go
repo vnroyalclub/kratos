@@ -2,17 +2,17 @@ package resolver
 
 import (
 	"context"
-	"git.huoys.com/middle-end/kratos/pkg/conf/env"
-	"git.huoys.com/middle-end/kratos/pkg/naming/kubernetes"
+	"github.com/vnroyalclub/kratos/pkg/conf/env"
+	"github.com/vnroyalclub/kratos/pkg/naming/kubernetes"
 	"github.com/pkg/errors"
 	"net/url"
 	"strconv"
 	"strings"
 	"sync"
 
-	"git.huoys.com/middle-end/kratos/pkg/log"
-	"git.huoys.com/middle-end/kratos/pkg/naming"
-	wmeta "git.huoys.com/middle-end/kratos/pkg/naming/metadata"
+	"github.com/vnroyalclub/kratos/pkg/log"
+	"github.com/vnroyalclub/kratos/pkg/naming"
+	wmeta "github.com/vnroyalclub/kratos/pkg/naming/metadata"
 
 	"google.golang.org/grpc/resolver"
 )

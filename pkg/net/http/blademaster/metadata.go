@@ -7,10 +7,10 @@ import (
 	"strings"
 	"time"
 
-	"git.huoys.com/middle-end/kratos/pkg/conf/env"
-	"git.huoys.com/middle-end/kratos/pkg/log"
-	"git.huoys.com/middle-end/kratos/pkg/net/criticality"
-	"git.huoys.com/middle-end/kratos/pkg/net/metadata"
+	"github.com/vnroyalclub/kratos/pkg/conf/env"
+	"github.com/vnroyalclub/kratos/pkg/log"
+	"github.com/vnroyalclub/kratos/pkg/net/criticality"
+	"github.com/vnroyalclub/kratos/pkg/net/metadata"
 
 	"github.com/pkg/errors"
 )

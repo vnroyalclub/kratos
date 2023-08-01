@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"time"
 
-	"git.huoys.com/middle-end/kratos/pkg/cache/memcache"
-	"git.huoys.com/middle-end/kratos/pkg/container/pool"
-	xtime "git.huoys.com/middle-end/kratos/pkg/time"
+	"github.com/vnroyalclub/kratos/pkg/cache/memcache"
+	"github.com/vnroyalclub/kratos/pkg/container/pool"
+	xtime "github.com/vnroyalclub/kratos/pkg/time"
 )
 
 // Dao .

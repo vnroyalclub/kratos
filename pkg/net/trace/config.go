@@ -8,9 +8,9 @@ import (
 
 	"github.com/pkg/errors"
 
-	"git.huoys.com/middle-end/kratos/pkg/conf/dsn"
-	"git.huoys.com/middle-end/kratos/pkg/conf/env"
-	xtime "git.huoys.com/middle-end/kratos/pkg/time"
+	"github.com/vnroyalclub/kratos/pkg/conf/dsn"
+	"github.com/vnroyalclub/kratos/pkg/conf/env"
+	xtime "github.com/vnroyalclub/kratos/pkg/time"
 )
 
 var _traceDSN = "unixgram:///var/run/dapper-collect/dapper-collect.sock"

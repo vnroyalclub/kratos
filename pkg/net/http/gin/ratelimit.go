@@ -7,9 +7,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"git.huoys.com/middle-end/kratos/pkg/log"
-	limit "git.huoys.com/middle-end/kratos/pkg/ratelimit"
-	"git.huoys.com/middle-end/kratos/pkg/ratelimit/bbr"
+	"github.com/vnroyalclub/kratos/pkg/log"
+	limit "github.com/vnroyalclub/kratos/pkg/ratelimit"
+	"github.com/vnroyalclub/kratos/pkg/ratelimit/bbr"
 )
 
 // RateLimiter bbr middleware.

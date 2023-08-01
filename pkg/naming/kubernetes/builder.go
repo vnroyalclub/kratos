@@ -3,7 +3,7 @@ package kubernetes
 import (
 	"context"
 	"fmt"
-	"git.huoys.com/middle-end/kratos/pkg/naming"
+	"github.com/vnroyalclub/kratos/pkg/naming"
 	"google.golang.org/grpc/resolver"
 	"net"
 	"strconv"

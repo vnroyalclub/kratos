@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
-	"git.huoys.com/middle-end/kratos/pkg/net/trace"
-	xtime "git.huoys.com/middle-end/kratos/pkg/time"
+	"github.com/vnroyalclub/kratos/pkg/net/trace"
+	xtime "github.com/vnroyalclub/kratos/pkg/time"
 )
 
 func TestZipkin(t *testing.T) {

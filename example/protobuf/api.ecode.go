@@ -4,7 +4,7 @@
 package api
 
 import (
-	"git.huoys.com/middle-end/kratos/pkg/ecode"
+	"github.com/vnroyalclub/kratos/pkg/ecode"
 )
 
 // to suppressed 'imported but not used warning'

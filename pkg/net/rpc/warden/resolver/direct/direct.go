@@ -2,13 +2,13 @@ package direct
 
 import (
 	"context"
-	wmeta "git.huoys.com/middle-end/kratos/pkg/naming/metadata"
-	"git.huoys.com/middle-end/kratos/pkg/net/rpc/warden/balancer/p2c"
+	wmeta "github.com/vnroyalclub/kratos/pkg/naming/metadata"
+	"github.com/vnroyalclub/kratos/pkg/net/rpc/warden/balancer/p2c"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/serviceconfig"
 	"strings"
 
-	"git.huoys.com/middle-end/kratos/pkg/naming"
+	"github.com/vnroyalclub/kratos/pkg/naming"
 	gresolver "google.golang.org/grpc/resolver"
 )
 

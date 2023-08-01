@@ -4,8 +4,8 @@ import (
 	"strconv"
 	"strings"
 
-	"git.huoys.com/middle-end/kratos/tool/protobuf/pkg/generator"
-	"git.huoys.com/middle-end/kratos/tool/protobuf/pkg/naming"
+	"github.com/vnroyalclub/kratos/tool/protobuf/pkg/generator"
+	"github.com/vnroyalclub/kratos/tool/protobuf/pkg/naming"
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/protoc-gen-go/descriptor"
 	plugin "github.com/golang/protobuf/protoc-gen-go/plugin"

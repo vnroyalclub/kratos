@@ -5,8 +5,8 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	wmeta "git.huoys.com/middle-end/kratos/pkg/naming/metadata"
-	"git.huoys.com/middle-end/kratos/pkg/net/rpc/warden/balancer/p2c"
+	wmeta "github.com/vnroyalclub/kratos/pkg/naming/metadata"
+	"github.com/vnroyalclub/kratos/pkg/net/rpc/warden/balancer/p2c"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/resolver"
 	"google.golang.org/grpc/serviceconfig"
@@ -18,12 +18,12 @@ import (
 	"sync/atomic"
 	"time"
 
-	"git.huoys.com/middle-end/kratos/pkg/conf/env"
-	"git.huoys.com/middle-end/kratos/pkg/ecode"
-	"git.huoys.com/middle-end/kratos/pkg/log"
-	"git.huoys.com/middle-end/kratos/pkg/naming"
-	http "git.huoys.com/middle-end/kratos/pkg/net/http/blademaster"
-	xtime "git.huoys.com/middle-end/kratos/pkg/time"
+	"github.com/vnroyalclub/kratos/pkg/conf/env"
+	"github.com/vnroyalclub/kratos/pkg/ecode"
+	"github.com/vnroyalclub/kratos/pkg/log"
+	"github.com/vnroyalclub/kratos/pkg/naming"
+	http "github.com/vnroyalclub/kratos/pkg/net/http/blademaster"
+	xtime "github.com/vnroyalclub/kratos/pkg/time"
 )
 
 const (

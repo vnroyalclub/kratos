@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	mt "git.huoys.com/middle-end/kratos/pkg/cache/memcache/test"
+	mt "github.com/vnroyalclub/kratos/pkg/cache/memcache/test"
 )
 
 func TestEncode(t *testing.T) {

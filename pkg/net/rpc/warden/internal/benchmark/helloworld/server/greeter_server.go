@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"time"
 
-	"git.huoys.com/middle-end/kratos/pkg/net/rpc/warden"
-	pb "git.huoys.com/middle-end/kratos/pkg/net/rpc/warden/internal/proto/testproto"
-	xtime "git.huoys.com/middle-end/kratos/pkg/time"
+	"github.com/vnroyalclub/kratos/pkg/net/rpc/warden"
+	pb "github.com/vnroyalclub/kratos/pkg/net/rpc/warden/internal/proto/testproto"
+	xtime "github.com/vnroyalclub/kratos/pkg/time"
 
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 )

@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"strings"
 
-	"git.huoys.com/middle-end/kratos/tool/protobuf/pkg/tag"
-	"git.huoys.com/middle-end/kratos/tool/protobuf/pkg/typemap"
+	"github.com/vnroyalclub/kratos/tool/protobuf/pkg/tag"
+	"github.com/vnroyalclub/kratos/tool/protobuf/pkg/typemap"
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/protoc-gen-go/descriptor"
 	"google.golang.org/genproto/googleapis/api/annotations"

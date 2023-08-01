@@ -3,9 +3,9 @@ package auth_test
 import (
 	"fmt"
 
-	"git.huoys.com/middle-end/kratos/example/blademaster/middleware/auth"
-	bm "git.huoys.com/middle-end/kratos/pkg/net/http/blademaster"
-	"git.huoys.com/middle-end/kratos/pkg/net/metadata"
+	"github.com/vnroyalclub/kratos/example/blademaster/middleware/auth"
+	bm "github.com/vnroyalclub/kratos/pkg/net/http/blademaster"
+	"github.com/vnroyalclub/kratos/pkg/net/metadata"
 )
 
 // This example create a identify middleware instance and attach to several path,

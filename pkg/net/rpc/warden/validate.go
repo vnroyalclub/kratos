@@ -3,7 +3,7 @@ package warden
 import (
 	"context"
 
-	"git.huoys.com/middle-end/kratos/pkg/ecode"
+	"github.com/vnroyalclub/kratos/pkg/ecode"
 
 	"google.golang.org/grpc"
 	"gopkg.in/go-playground/validator.v9"

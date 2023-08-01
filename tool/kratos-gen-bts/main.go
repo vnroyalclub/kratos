@@ -15,7 +15,7 @@ import (
 	"strings"
 	"text/template"
 
-	"git.huoys.com/middle-end/kratos/tool/pkg"
+	"github.com/vnroyalclub/kratos/tool/pkg"
 )
 
 var (

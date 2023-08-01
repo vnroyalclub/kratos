@@ -9,10 +9,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"git.huoys.com/middle-end/kratos/pkg/net/netutil/breaker"
-	"git.huoys.com/middle-end/kratos/pkg/net/rpc/warden"
-	pb "git.huoys.com/middle-end/kratos/pkg/net/rpc/warden/internal/proto/testproto"
-	xtime "git.huoys.com/middle-end/kratos/pkg/time"
+	"github.com/vnroyalclub/kratos/pkg/net/netutil/breaker"
+	"github.com/vnroyalclub/kratos/pkg/net/rpc/warden"
+	pb "github.com/vnroyalclub/kratos/pkg/net/rpc/warden/internal/proto/testproto"
+	xtime "github.com/vnroyalclub/kratos/pkg/time"
 )
 
 var (

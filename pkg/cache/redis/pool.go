@@ -25,9 +25,9 @@ import (
 	"sync"
 	"time"
 
-	"git.huoys.com/middle-end/kratos/pkg/container/pool"
-	"git.huoys.com/middle-end/kratos/pkg/net/trace"
-	xtime "git.huoys.com/middle-end/kratos/pkg/time"
+	"github.com/vnroyalclub/kratos/pkg/container/pool"
+	"github.com/vnroyalclub/kratos/pkg/net/trace"
+	xtime "github.com/vnroyalclub/kratos/pkg/time"
 )
 
 var beginTime, _ = time.Parse("2006-01-02 15:04:05", "2006-01-02 15:04:05")

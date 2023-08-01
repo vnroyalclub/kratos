@@ -9,11 +9,11 @@ import (
 	"sync/atomic"
 	"time"
 
-	"git.huoys.com/middle-end/kratos/pkg/conf/env"
+	"github.com/vnroyalclub/kratos/pkg/conf/env"
 
-	"git.huoys.com/middle-end/kratos/pkg/log"
-	wmd "git.huoys.com/middle-end/kratos/pkg/naming/metadata"
-	nmd "git.huoys.com/middle-end/kratos/pkg/net/metadata"
+	"github.com/vnroyalclub/kratos/pkg/log"
+	wmd "github.com/vnroyalclub/kratos/pkg/naming/metadata"
+	nmd "github.com/vnroyalclub/kratos/pkg/net/metadata"
 
 	"google.golang.org/grpc/balancer"
 	"google.golang.org/grpc/balancer/base"

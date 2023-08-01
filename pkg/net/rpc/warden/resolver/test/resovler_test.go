@@ -7,13 +7,13 @@ import (
 	"testing"
 	"time"
 
-	"git.huoys.com/middle-end/kratos/pkg/conf/env"
-	"git.huoys.com/middle-end/kratos/pkg/naming"
-	"git.huoys.com/middle-end/kratos/pkg/net/netutil/breaker"
-	"git.huoys.com/middle-end/kratos/pkg/net/rpc/warden"
-	pb "git.huoys.com/middle-end/kratos/pkg/net/rpc/warden/internal/proto/testproto"
-	"git.huoys.com/middle-end/kratos/pkg/net/rpc/warden/resolver"
-	xtime "git.huoys.com/middle-end/kratos/pkg/time"
+	"github.com/vnroyalclub/kratos/pkg/conf/env"
+	"github.com/vnroyalclub/kratos/pkg/naming"
+	"github.com/vnroyalclub/kratos/pkg/net/netutil/breaker"
+	"github.com/vnroyalclub/kratos/pkg/net/rpc/warden"
+	pb "github.com/vnroyalclub/kratos/pkg/net/rpc/warden/internal/proto/testproto"
+	"github.com/vnroyalclub/kratos/pkg/net/rpc/warden/resolver"
+	xtime "github.com/vnroyalclub/kratos/pkg/time"
 
 	"github.com/stretchr/testify/assert"
 )

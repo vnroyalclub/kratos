@@ -1,6 +1,6 @@
 package memcache
 
-import "git.huoys.com/middle-end/kratos/pkg/stat/metric"
+import "github.com/vnroyalclub/kratos/pkg/stat/metric"
 
 const namespace = "memcache_client"
 

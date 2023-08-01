@@ -3,7 +3,7 @@ package testdata
 import (
 	"context"
 
-	"git.huoys.com/middle-end/kratos/pkg/sync/pipeline/fanout"
+	"github.com/vnroyalclub/kratos/pkg/sync/pipeline/fanout"
 )
 
 // Demo test struct

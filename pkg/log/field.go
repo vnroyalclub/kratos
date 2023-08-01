@@ -4,7 +4,7 @@ import (
 	"math"
 	"time"
 
-	"git.huoys.com/middle-end/kratos/pkg/log/internal/core"
+	"github.com/vnroyalclub/kratos/pkg/log/internal/core"
 )
 
 // D represents a map of entry level data used for structured logging.

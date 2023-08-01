@@ -13,12 +13,12 @@ import (
 	"sync/atomic"
 	"time"
 
-	"git.huoys.com/middle-end/kratos/pkg/log"
-	"git.huoys.com/middle-end/kratos/pkg/net/criticality"
-	"git.huoys.com/middle-end/kratos/pkg/net/http/config"
-	"git.huoys.com/middle-end/kratos/pkg/net/ip"
-	"git.huoys.com/middle-end/kratos/pkg/net/metadata"
-	xtime "git.huoys.com/middle-end/kratos/pkg/time"
+	"github.com/vnroyalclub/kratos/pkg/log"
+	"github.com/vnroyalclub/kratos/pkg/net/criticality"
+	"github.com/vnroyalclub/kratos/pkg/net/http/config"
+	"github.com/vnroyalclub/kratos/pkg/net/ip"
+	"github.com/vnroyalclub/kratos/pkg/net/metadata"
+	xtime "github.com/vnroyalclub/kratos/pkg/time"
 
 	"github.com/pkg/errors"
 )
